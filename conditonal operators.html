@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditional operators</title>
+</head>
+<body>
+    <script>
+        // to find the factorial of a number
+    
+    var n = prompt("Enter a positive integer:");
+   
+    if (n==0){
+        document.write(`The factorial of ${n} is 1`);
+    }
+    else{
+        let fact=1;
+        for(i=1;i<=n;i++){
+            fact*=i;
+        }
+        document.write(`the factorial of ${n} is ${fact}`);
+    }
+
+    //fibonacci series
+    document.write("<br>");
+    var number = parseInt(prompt("enter a value:"));
+    var n1=0,n2=1,nextTerm;
+    for(let i=1;i<=number;i++){
+        document.write(`${n1}`);
+        nextTerm=n1+n2;
+        n1=n2;
+        n2=nextTerm;
+    }
+    document.write("<br>");
+    //swapping numbers
+    let a = parseInt(prompt("enter first value:"));
+    let b = parseInt(prompt("enter second value:"));
+    let c;
+    
+    c = a;
+    a = b;
+    b = c;
+    
+    document.write(`the first value after swapping is ${a}` );
+    document.write("<br>");
+    document.write(`the second value after swapping is ${b}` );
+    
+
+   
+    
+
+    
+
+    
+
+    </script>
+</body>
+</html>

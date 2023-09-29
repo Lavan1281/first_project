@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class- blueprint of an object
+        //object - instances of a class
+
+        //encapsulation - address is to access the value unless when we authority to call the value and cant call directly 
+        class person{
+            constructor(id,name){
+                this.id=id;
+                this.name=name;
+            }
+            //encapsulated value method
+            address(add){
+                this.add = add;
+                console.log("Address: " + this.add);
+            }
+            details(){
+
+                //formatting - $
+                console.log("Id: "+`${this.id}`+"\n"+"Name: "+ 
+                
+                `${this.name}`);
+        
+            }
+        }
+        //object 
+        var l = new person(
+            101,"Lavanya"
+        );
+        var m = new person(
+            102, "Jothi"
+        );
+        l.details();
+        l.address("Udumalpet");
+        m.details();
+        m.address("Chennai");
+    </script>
+</body>
+</html>

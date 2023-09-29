@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>demo project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        }
+        .container{
+            width: 100% ;
+            height: 120vh;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.4),transparent),url("https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1784&q=80") ;
+            background-position: center;
+            background-attachment: fixed; 
+            position: relative;
+        }
+        .text-box{
+            color: white;
+            position: absolute;
+            bottom: 10%;
+
+        }
+        .text-box p{
+            font-size: 40px;
+            font-weight: 900;
+        }
+        .text-box h1{
+            font-size: 80px;
+            line-height: 120px;
+            color:transparent;
+            -webkit-text-stroke: 1px #fff;
+            background-image: url("photo-1579546929518-9e396f3cc809.jfif");
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 1s linear infinite;
+        }
+        @keyframes back{
+            100%{
+                background-position: 0 0;
+            }
+        }
+        
+      
+    </style>
+    
+  
+    
+</head>
+<body>
+    <div class="container"></div>
+    <div class="text-box">
+        <h1>WELCOME TO <br>THE ANIME WORLD</h1>
+        <p>"AnimeThreads: Unleash Your Inner Otaku with Our Unique T-shirt Collection!"</p>
+    </div>
+    
+</body>
+</html>

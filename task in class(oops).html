@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Square{
+            constructor(length){
+                this.length = length;
+            }
+            sqr(){
+                return("total Area of Square: " + this.length*this.length);
+            }
+        }
+        class rectangle extends Square{
+            constructor(length,breadth){
+                super(length);
+                this.breadth=breadth;
+            }
+            sqr(){
+                return(this.length*this.breadth);
+            }
+        }
+        
+        let rect = new rectangle(5,6);
+        let sqrt = new Square(25);
+        console.log(rect.sqr());
+        console.log(sqrt.sqr());
+        console.log(sqrt instanceof Square);
+        console.log(rect instanceof Square);
+        console.log(sqrt instanceof rectangle);
+        console.log(rect instanceof rectangle);
+    </script>
+</body>
+</html>

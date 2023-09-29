@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        div,p,a{
+            padding: 15px 30px;
+            display: block;
+            border: 2px solid black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Accessing Target</h3>
+
+    <div id="main1">Div
+        <p id="para1">P
+            <a href="#">A</a>
+        </p>
+    </div>
+
+    <script>
+        var p = document.getElementById("main1");
+        p.onclick = function(event){
+            event.target.style.backgroundColor = "lightblue";
+            setTimeout(() =>{
+                alert("Target " + event.target.tagName + " this "+this.tagName);
+                event.target.style.backgroundColor = "";
+            },0);
+        }
+    </script>
+    <----------------Stop Propagation-------------->
+
+    <!-- <script>
+        function showAlert(event){
+            alert("you clicked: " + this.tagName);
+            event.stopPropagation();
+        }
+        var p = document.querySelectorAll("div,p,a");
+        for(let l of p){
+            l.addEventListener("click",showAlert);
+        }
+    </script>
+    
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" id="text1">
+        <button id="sub">Submit</button>
+    </form>
+    <script>
+        var p = document.getElementById("sub");
+        p.addEventListener("click",function(event){
+            var l = document.getElementById("text1").value;
+            alert("Sorry "+l+", You can't submit the form.");
+            event.preventDefault();
+        })
+        
+    </script>
+</body>
+</html>

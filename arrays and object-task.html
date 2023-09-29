@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <!--------------------the longest name of the student------------------------------------------------------------------------------------------->
+    <script>
+        // let studentname = ["Lavanya","Kowsalya","Susil","Abu","Jagdeshwaran","Alagar"];
+        // let longest = "";
+        // for(let i=0;i<studentname.length;i++){
+        //     if(studentname[i].length>longest.length){
+        //         longest=studentname[i];
+        //     }
+        // }
+        // console.log(longest);
+
+
+    </script>
+    <!-------------------------------------------------shortest name of the student---------------------------------->
+    <script>
+        let studentNames = ["Lavanya","Kowsalya","Susil","Abu","Jagdeshwaran","Alagar"];
+        let shortestname = studentNames[0];
+        for(let i = 1; i < studentNames.length; i++){
+            if(studentNames[i].length < shortestname.length){
+                shortestname = studentNames[i];
+            }
+        }
+        console.log(shortestname); 
+
+
+    </script>
+</body>
+</html>

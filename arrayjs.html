@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        // let b = ["lavanya", "kowsalya",5,6,4];//elements -""
+        
+        // for(var i=0;i<b.length;i++){
+        //     document.write(b[i],"<br>");
+            
+        // }
+        // //another  for method
+        // for(var z of b){
+        //     document.write(z+"<br>");
+        // }
+        // //types of for methods
+        // for(var x in b){
+        //     document.write(b[x],"<br>");
+        // }
+
+        //types of array method
+        //Push method
+        
+        // b.push(7,8,9,"values");
+        // document.write(b);
+        // document.write("<br>")
+        // document.write(b.length);
+        // document.write("<br>")
+        // b.unshift(24);
+        // document.write(b);
+        // b.pop(); //pop,push - last digit
+        // document.write(b,"<br>");
+        // b.splice(4,5);
+        // document.write(b);
+       
+        //document.write( b.join("*"));
+        // var a =["development"]
+        // var c=b.concat(a);
+        // document.write(c);
+        // document.write("<br>");
+        // var a= b.toString();
+        // document.write(typeof(a));
+        
+        // document.write(b.slice(0,2));
+
+        // array is collection of elements
+        // var a = [1,4,5,9,7,8,1];
+        
+
+        // document.write(a.includes(3));
+        // document.write("<br>");
+        // document.write(a.lastIndexOf(6));
+        // document.write("<br>");
+        // var result = a.find(function(element)
+        // {return element > 1;});
+        // document.write(result);
+        // document.write("<br>");
+        // var result=a.findIndex(function(element){
+        //   return element > 1;
+        // });
+        // document.write(result);
+        // document.write("<br>");
+        // var result = a.filter(function(element){
+        //   return element > 4;        });
+        //   document.write(result);
+        //   document.write("<br>");
+        //   var p = a.sort();
+        //   document.write(p);
+        //   document.write("<br>");
+        //   var p =[105,45,82,56];
+        //   document.write(p.sort(function(a,b){return a-b}));
+        //   document.write("<br>");
+        //   var p1 =["lavanya","laranya","python","java","c"];
+        //   document.write(p1.sort());
+        //   document.write("<br>");
+        //   document.write(p1.reverse());
+        //   document.write("<br>");
+        //   var number = [3,-5,45,8,-15];
+        //   function findMax(array){
+        //     return Math.max.apply(null, array);
+        //   }
+        //   document.write(findMax(number) +"<br>");
+
+        //   function findMin(array){
+        //     return Math.min.apply(null,array);
+
+        //   }
+        //   document.write(findMin(number));
+
+        // var a = [[2,1],[3,2]];
+        // console.log(a);
+        // console.log(a[1][1]);
+        // function twoDimensionArray(a,b){
+        // let arr = [];
+        // for(let i=0;i<a;i++){
+        //   for(let j=0;j<b;j++){
+        //     arr[i] = [];
+        //   }
+        //   }
+        //   for(let i=0;i<a;i++){
+        //     for(let j=0;j<b;j++){
+        //       arr[i][j] =j;
+        //     }
+        //   }
+        //   return arr;
+        // }
+        // const x =2;
+        // const y =3;
+        // const result = twoDimensionArray(x,y);
+        // console.log(result);
+
+       
+
+        //---------OBJECT------------//   
+        // var p ={"Name":"Lavanya","Age":22,"Gender":"Female"};
+        // console.log(p);
+        // console.log(p["Name"]);
+        // console.log(typeof(p));
+        // for(let x in p){
+        //   document.write(p[x] +"<br>");
+        // }
+        // document.write(p.Name);  // dot notation
+        // p["Address"] = "Egmore";
+        // console.log(p);
+        // //insert
+        // p.course = "FSD";
+        // console.log(p);
+        
+        // //update
+        // p["Name"] = "Kowsalya";
+        // console.log(p);
+        
+        // p.Age = "23";
+        // console.log(p);
+        // //delete
+        // delete p.Age;
+        // console.log(p);
+
+
+         //function() - pre-defined set of code which it is called   //
+
+        //object using function (this) //
+      //   var student ={Name: "Lavanya", Age: "22", Gender: "Female", Display:function(){alert ((this.Name )+"\n"+( this.Age)+"\n"+(this.Gender))}
+      // ,show: function(){document.write("hi")}};
+      //   student.Display();
+      //   // student.show();
+      //   student["show"]();
+      //   //push pop sort find
+
+      // function twoDimensionArray(){
+      //   var a = parseInt(document.getElementById("a").value);
+      //   var b= parseInt(document.getElementById("b").value);
+        
+      //   var arr1 = [];
+      //   var arr2 = [];
+
+      //   for(var i = 0;i<a;i++){
+      //     var a = [];
+      //     var b = [];
+      //     for(var j=0;j<b;j++){
+      //       var value1 = 
+      //     }
+      //   }
+      // }
+
+
+      // var emp = {empno:18,emp_name:"Lavanya",Designation:"Developer",Salary:35000,display:function(){document.write("empno",this.empno+"<br>"+"empname",this.emp_name)}}
+      // emp.display();
+      // document.write("<br>");
+      // //array of objects
+
+      // var emp1 =[{empno:18,emp_name:"Lavanya",Designation:"Developer",Salary:35000},{empno:19,emp_name:"lavan",Designation:"Developer",Salary:35000}]
+      // for (var x in emp1){
+      //   console.log(emp1[x]);
+      // }
+
+      // var library = [{title: "The Road Ahead", author: "Bill Gates" , readingStatus: true},
+      //  {title: "Walter Isaacson",author:"Steve Jobs", readingStatus : true}, 
+      //  {title: "Mockingjay: The Final Book of the Hunger Games", author: "Suzanne Collins", readingStatus: false}];
+
+      //  for(var i=0;i < library.length;i++){
+      //   var book = " ' " + library[i].title;
+      //   // if(library[i].readingStatus == true){
+      //   //   document.write("Already read "+ book +"<br>");
+          
+                                     
+      //   // }
+      //   // else{
+      //   //   document.write("you still need to read "+ book +"<br>");
+      //   // }
+        // for(var i =0;i<library.length;i++){
+        //   var author = library[i].title;
+        // if(library[i].author == "Steve Jobs"){
+        //   document.write("Already read "+ author +"<br>");
+        // }
+        // else{
+        //   document.write("you still need to read "+ author+"<br>");
+        // }
+        // }
+        var library = [
+        {
+          title: 'Hangover',
+          Author:'Alan',
+          redingsta: true,
+        },
+        {
+          title: 'House of the Dragons',
+          Author:'Targariyan',
+          redingsta: true,
+        },
+        {
+          title: 'Peaky Blinders',
+          Author:'Thomas Shelby',
+          redingsta: false,
+        }
+       ];
+        for( var i in library ){
+          console.log(library[i]);
+        }
+          for(var i = 0; i<library.length;i++){
+            var book =  library[i].title + library[i].Author;
+            if(library[i].readingStatus == true){
+              document.write("you still need to read "+ book +"<br>");
+            }
+            else{
+              document.write("Already read "+ Author +"<br>");
+            }
+          }
+          for(var j = 0;j<library.length;j++){
+            var Author = library[j].title;
+            if(library[j].Author== "Alan"){
+              document.write("Book written by Alan" + Author);
+            }
+          }
+
+       
+      
+      
+
+
+
+
+
+      </script>
+      <!-- // <input type="number" id ="a">
+      // <input type ="number" id ="b">
+      // <input type="button" onclick="getArrayValues()";>
+      // <div id="output"></div> -->
+
+      <!-- <span class="Output"></span>
+      <span class="NoOutput"></span>
+      <button onclick ="check_property()">Check</button>
+      <script>
+            function check_property(){
+              function Car(a,b){
+                this.Model = a;
+                this.Name = b;
+
+              }
+              //Object creation
+              let obj=new Car("Benz","007");
+              var result = obj.hasOwnProperty("");
+              document.querySelector(".Output").textContent=result;
+
+              
+              
+              
+            }
+      </script> -->
+      <script>
+        // function haskey(obj, key){
+        //   return obj != null && hasOwnProperty.call(obj, key);
+
+
+        // }
+
+        // console.log(haskey({name: "lavan",age:22},"age"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        // //patterns with alphabet
+
+        // let n =5;
+        // let string ="";
+        // for(let i =1; i<=n;i++){
+        //   for(j=0;j<i;j++){
+        //     string += j;
+        //   }
+        //   string += "\n";
+
+        // }
+        // console.log(string);
+        
+        //right triangle star pattern 
+
+        // let n=5;
+        // let string = "";
+        // for(let i=1; i<=n;i++){
+        //   for(let j=0; j<n-i;j++){
+        //     string += " "; // Add spaces for indentation 
+        //   }
+        //   for(let k=0;k<i;k++){
+        //     string +="*";
+        //   }
+        //   string += "\n";
+
+        // }
+        // console.log(string);
+
+
+      //Downward triangle pattern
+
+        // let n=5;
+        // let string ="";
+        // for(let i=1;i < n;i++){
+        //   for(let k = 0;k < n-i;k++){
+        //     string += "*";
+        //   }
+        //   string +="\n";
+        // }
+        // console.log(string);
+
+        //Pyramid pattern
+
+        // let n=5;
+        // let string ="";
+        // for(let i=1;i<=n;i++){
+        //   for(let j=1;j<=n-i;j++){
+        //     string += " ";
+        //   }
+        //   for(let k=0;k<2*i-1;k++){
+        //     string += "*";
+
+        //   }
+        //   string += "\n";
+        // }
+        // console.log(string);
+
+        //right pascal pattern
+
+        let n =5;
+        let string ="";
+        for(let i =1;i<=n;i++){
+          for(let j=0;j<i;j++){
+            string += "*";
+          }
+          string += "\n";
+
+        }
+        for(let i=1;i<=n-1;i++){
+          for(let j=0;j<n-i;j++){
+            string +="*";
+          }
+          string +="\n";
+        }
+        console.log(string);
+
+
+        
+         
+      </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

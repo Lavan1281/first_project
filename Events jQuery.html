@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        // mouse events - click method
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).slideUp();
+            });
+        });
+        $(document).ready(function(){
+            $("#dbll").dblclick(function(){
+                $(this).slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).slideDown();
+            });
+        });
+        $(document).ready(function(){
+            $("#dbll").hover(function(){
+                $(this).css("background","lightblue");
+            });
+            $(".mouse").mouseenter(function(){
+            $(this).addClass("hightlight");
+        });
+        $(".mouse").mouseleave(function(){
+            $(this).removeClass("hightlight");
+        });
+
+        //Key Events
+
+        //keypress
+        // var i = 0;
+        // $('input[type="text"]').keypress(function(){
+        //     $("span").text(i+=1);
+        //     $("p").show().fadeToggle();
+        //     //$("p").show().fadeOut();
+        // });
+        //keydown
+        // var i = 0;
+        // $('input[type="text"]').keydown(function(){
+        //     $("span").text(i+=1);
+        //     $("p").show().fadeToggle();
+        //     //$("p").show().fadeOut();
+        // });
+        // var i = 0;
+        // $('input[type="text"]').keyup(function(){
+        //     $("span").text(i+=1);
+        //     $("p").show().fadeToggle();
+        //     //$("p").show().fadeOut();
+        // });
+        // $("select").change(function(){
+        //     var select = $(this).find(":selected").val();
+        //     alert("you have selected " + select);
+        // });
+        // $("input").focus(function(){
+        //     //$(this).next("span").show().fadeIn("slow");
+        //     $(this).next("span").show().fadeOut("slow");
+        // });
+        // $("input").focus(function(){
+        //     $(this).next("span").show().fadeIn("slow");
+        // });
+      
+        $("input").blur(function(){
+            $(this).next("span").show().fadeOut();
+        });
+        $("form").submit(function(){
+            var a = /^[a-zA-Z]+$/;
+            var b = $("#firstname").val();
+            if(a.test(b)== false){
+                alert("not valid");
+                event.preventDefault();
+            }
+        });
+
+        });
+
+        //window events
+        $(window).resize(function(){
+            $(window).bind("resize",function(){
+                alert("Window width&height "+$(window).width()+"X"+ $(window).height());
+            });
+        });
+        $(window).scroll(function(){
+            $("h1").show().fadeOut("slow");
+           
+        });
+
+        
+    </script>
+
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda placeat inventore non, maiores dolor in veritatis a fuga natus provident optio officiis laudantium molestiae eveniet esse ipsa beatae quis iure.</p>
+    <br>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint temporibus porro laborum ex non, eos minus architecto repellat blanditiis dolorem itaque quo similique enim vero, beatae quis expedita odit sit.</p>
+    <br>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorem reiciendis voluptatibus iure aspernatur voluptatum possimus ab debitis, hic dignissimos unde animi incidunt minus sit assumenda et. Enim, unde aliquid!</p>
+    <br>
+    <p id="dbll">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <h3>Mouse enter and mouse leave</h3>
+    <p class="mouse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab error nulla numquam tempora libero placeat mollitia necessitatibus quod id? Quam ad accusamus libero officia fugiat natus unde quia fuga.</p>
+    <input type="text">
+    <div>
+        <span>0</span>
+    </div>
+    <p id="name">keypress</p>
+
+    <!-----------Form Events---------->
+    <!--Change Method-->
+    
+    <!-- <form>
+        <select>
+            <option>Front End</option>
+            <option>Back End</option>
+            <option>UI/UX Design</option>
+            <option>Full Stack</option>
+        </select>
+
+    </form> -->
+    <!---submit Method-->
+
+    <form>
+        
+        <input type="text" id="nam"><br>
+        <span>FadeOut</span>   
+        <input type="text" id="nam1">
+        <span>fadeIn</span>
+        <input type="password" id="nam2">
+        <span>fadeOut</span><br>
+        <input id="firstname" type="text">
+        <input type="submit">
+    </form>
+
+    <h1>this is a paragraph </h1>
+
+</body>
+</html>

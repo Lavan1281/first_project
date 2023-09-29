@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = ["lavanya","kowsalya","abu","susil"];
+        console.log(n[2]);
+        for(let i=0;i<n.length;i++){
+            document.write(n[i]+"<br>");
+        }
+        var m ={name:"lavanya",age:22,gender:"female"};
+        console.log(m.name+"\n"+m.age+"\n"+m.gender);
+        text = "";
+        for(let x in m){
+            text += m[x];
+            
+
+        }
+        document.write(text+"<br>");
+
+        //array of object
+        var student =[
+            {Name:"lavanya",Age:22,Gender:"Female"},{Name:"Kowsalya",Age:23,Gender:"Female"},{Name:"Gokila",Age:48,Gender:"Female"}
+        ];
+        for(var i in student){
+            console.log(student[i]);
+        }
+        console.log(student[0]);
+        
+    </script>
+    
+</body>
+</html>

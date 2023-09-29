@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <input type="submit" value="Submit">
+      </form>
+    <script>
+
+        // function calage(dob){
+        //     let p = Date.now()-dob.getTime();
+        //     let l = new Date(p);
+        //     return Math.abs(l.getUTCFullYear()-1969);
+
+        // }
+        // console.log(calage(new Date(2014,11,16)));
+
+    </script>
+    <!-- <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+        const dateInput = document.querySelector("#date");
+        const dateValue = dateInput.value;
+        const date = new Date(dateValue);
+        console.log(date);
+        });
+
+    </script> -->
+        <script>
+            const form = document.querySelector("form");
+            form.addEventListener("submit",(event)=>{
+                event.preventDefault();
+            const d = document.querySelector("#date");
+            const dateValue = dateInput.value;
+            const date = new Date(dateValue);
+            console.log(date);
+            });
+    
+        </script>
+ 
+</body>
+</html>

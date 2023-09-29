@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+       document.write("hello");
+       document.write("<br>");
+       document.write("I'm Lavanya");
+       document.write("<br>");
+       document.write(10*20);
+
+       document.write("<br>");
+       var name="charles";
+       function date(){
+        alert("Hello\t"+name);
+       }
+       document.getElementById("bt1")=date;
+
+       function date2(){
+        var name="daniel"
+        alert("Hello"+name);
+        
+       }
+       document.getElementById("bt2")=date2;
+
+    function getname(){
+    var name=document.getElementById("name").value;
+    
+    alert("hello "+name);
+}
+
+
+
+function addition(){
+    var x=parseInt(document.getElementById("value1").value);
+    var y=parseInt(document.getElementById("value2").value);
+    var c=x + y;
+    alert(c);
+    document.getElementById("addition")=c;
+
+}
+
+function getage(){
+    let age=document.getElementById("age").value;
+    
+    alert("entered age is "+age);
+    
+}
+function subtraction(){
+    let x=parseInt(document.getElementById("value1").value);
+    let y=parseInt(document.getElementById("value2").value);
+    let c=x - y;
+    alert(c);
+    document.getElementById("subtraction").innerhtml=c;
+
+    
+}
+
+
+
+    </script>
+    
+     <button id="bt1" onclick="date();">click 1</button>
+     <button id="bt2" onclick="date2();">click 2</button>
+     
+     <br>
+
+     Enter name:<input id="name">
+     <button onclick="getname()">Fetch</button>
+     <br>
+     Enter age:<input id="age">
+     <button onclick="getage()">enter</button>
+     
+<br>
+     enter value1:<input id="value1" type="number">
+     enter value2:<input id="value2" type="number">
+     <input type="submit" value="addition" onclick="addition()">
+     
+     <input type="submit" value="subtraction" onclick="suubtraction()">
+<br>
+    
+     
+
+<p id="age"></p>
+
+   
+
+</body>
+
+</html>

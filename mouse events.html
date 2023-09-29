@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events Js</title>
+</head>
+<body onload=olaf()>
+    <h2>Mouse click</h2>
+<a href="https://www.youtube.com/" id="link" >youtube</a>
+<script>
+    function links(){
+        var a = "Lavanya";
+        var b = "A";
+        document.write("enter your name: "+ a + b);
+    }
+    document.getElementById("link").ondblclick=links;
+</script>
+<p id="Mypara" onmousedown="mousedown1()" onmouseup="mouseup1()"> This paragraph color can be changed when mouse hover</p>
+<script>
+    function mousedown1(){
+        document.getElementById("Mypara").style.color = "lightblue";
+    }
+    function mouseup1(){
+        document.getElementById("Mypara").style.color = "pink";
+    }
+</script>
+<div id ="context1">
+    <p>The context menu will be disabled when right clicked</p>
+</div>
+<div id ="context">
+    <p>The context menu will be disabled when right clicked</p>
+</div>
+<script>
+    var x = document.getElementById("context");
+    x.addEventListener("contextmenu", (e)=>{e.preventDefault()});
+
+</script>
+
+<img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="52271.jpg" alt="space" width="100px" height="100px">
+<script>
+    function bigimg(y){
+        y.style.width = "320px"
+        y.style.height = "320px"
+
+    }
+    function smallimg(y){
+        y.style.width = "100px"
+        y.style.height = "100px"
+
+ }
+</script>
+<!------------------------------------------------window_events---------------------------------->>
+
+<p id="result"></p>
+<script>
+    function displaywindowsize(){
+        var x = window.outerWidth;
+        var y = window.outerHeight;
+        var z = "this is window height: " + y + " this is window width: "+x;
+        document.getElementById("result").innerHTML = z;
+    }
+    window.onresize= displaywindowsize();
+</script>
+<script>
+    function olaf(){
+        document.bgColor="lightblue";
+        window.setTimeout("olaf1()",700);
+    }
+    function olaf1(){
+        document.bgColor = "lightpink";
+        window.setTimeout("olaf2()",700);
+    }
+    function olaf2(){
+        document.bgColor = "purple";
+        window.setTimeout("olaf3()",700);
+    }
+    function olaf3(){
+        document.bgColor = "grey";  
+        window.setTimeout("olaf4()",700);
+    }
+    function olaf4(){
+        document.bgColor = "violet";
+        window.setTimeout("olaf()",700);
+    }
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Ajax</h3>
+    <p id="demo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni porro laboriosam officia amet est eum labore atque ratione fugit, assumenda cumque culpa at ex quibusdam itaque sunt. Consequuntur, eius?</p>
+    <button onclick="display()">display</button>   
+    <script>
+        function display(){
+            var request = new XMLHttpRequest();
+           // request.open('GET','textfileajax.txt');
+            request.onreadystatechange=function(){
+                if(this.readyState===4 && this.status===200){
+                    document.getElementById("demo").innerHTML=this.responseText;
+                }
+            }
+            request.send();
+        }
+        
+    </script>
+</body>
+</html>

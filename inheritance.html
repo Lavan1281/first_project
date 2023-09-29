@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class school{
+            constructor(name,age){
+                this.name= name;
+                this.age=age;
+
+            }
+            detail(){
+                return(`${this.name} , ${this.age}`);
+            }
+        }
+        class student extends school{
+            constructor(name,age,id){
+                super(name,age);
+                this.id = id;
+                
+            }
+            detail(){
+                return(`${super.detail()} ,${this.id}`);
+            }
+        }
+        let std =  new student("Lavanya",22,1050);
+        console.log(std.detail());
+    </script>
+</body>
+</html>

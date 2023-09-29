@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operators</title>
+</head>
+<body>
+   <!----<h2>Relational operators</h2>
+    Value a<p id="value1"></p><br>
+     Value b <p id="value2"></p>
+     value of a: <p id="a1"></p>
+     value of b: <p id="b1"></p>
+     value of A: <p id="a"></p>-->
+     <p id="dowhile"></p>
+    <script>
+        /*var a=prompt("enter value of a");
+        var b=prompt("enter value of b");
+        document.getElementById("value1").innerHTML=a;
+        document.getElementById("value2").innerHTML=b;
+
+        document.write("Greater than "+(a>b));
+        document.write("<br>");
+        document.write("Lesser than"+(a<b));
+        document.write("<br>");
+        document.write("Equal to"+(a==b));
+        document.write("<br>");
+        document.write("Not equal to "+(a!=b));
+        document.write("<br>");
+        document.write("Greater than and equal to "+(a>=b));
+        document.write("<br>");
+        document.write("Lesser than and equal to "+(a<=b));
+        document.write("<br>");
+        document.write("logical operators");
+        document.write("<br>");
+
+        document.write(((a>b)&&(b>a)));
+        document.write("<br>");
+        document.write(((a>b)||(b>a)));
+        document.write("<br>");
+        document.write(!((a>b)||(b>a)));
+        
+
+          
+            let a=parseInt(prompt("enter value of a"));
+            let b=parseInt(prompt("enter value of b"));
+            var value1=document.getElementById("a1").innerHTML=a;
+            var value2=document.getElementById("b1").innerHTML=b;
+            document.write("add = "+(a+b));
+            document.write("<br>");
+            document.write("sub = "+(a-b));
+            document.write("<br>");
+            document.write("multiply = "+(a*b));
+            document.write("<br>");
+            document.write("dvision = "+(a/b));
+            document.write("<br>");
+            document.write("modulus = "+(a%b));
+            document.write("<br>");
+            document.write("increment = "+(a++));
+            document.write("<br>");
+            document.write("decrement = "+(b--));
+            
+           
+           
+            /*var a = parseInt(prompt("Enter a value of a"));
+            var b =parseInt(prompt("enter value of b"));
+            let c=(a>b)?"b is greater than a":"a is greater than b";
+           
+            document.write(c);
+            var a= parseInt(prompt("enter a value of a"));
+            var b= parseInt(prompt("enter a value of b"));
+            var c= parseInt(prompt("enter a value of c"));
+            if((a>b)&&(b>c)){
+                document.write("a is greater");
+            }
+            else if((b>a)&&(b>c)){
+                document.write("b is greater");
+            }
+            else{
+                document.write("c is greater");
+            }
+            let a= Number(prompt("enter the value of a"));
+            switch(a){
+                case 1:
+                    a= "one";
+                    break;
+                case 2:
+                    a= "two";
+                    break;
+                case 3:
+                    a= "three";
+                    break;
+                default:
+                    a= "enter a valid data";
+                   
+
+
+            }
+            document.write("a=", a);*/
+            
+            
+            //////$-formatting  `${a}`///////
+
+            /*let operators = prompt("enter the operator");
+        
+            let a = parseInt(prompt("enter the value of a"));
+            let b = parseInt(prompt("enter the value of b"));
+            
+            switch(operators){
+                case "+":
+                    result = a+b;
+                    document.write(`${a}+ ${b}= ${result}`);
+                    break;
+                case "-":
+                result = a-b;
+                    document.write(`${a}-${b}= ${result}`);
+                    break;
+                case "*":
+                result = a*b;
+                    document.write(`${a}* ${b}= ${result}`);
+                    break;  
+                case "/":
+                result = a/b;
+                    document.write(`${a}/ ${b}= ${result}`);
+                    break;     
+                default:
+                    document.write("enter the valid data");
+                    break;
+                               
+            }
+            var a = 10;
+            while (a<=110){
+                document.write(a+"<br>"); 
+               // a++;
+                a--;
+                
+            }
+           
+
+            ////Enter a negative value loop becomes false////
+            var sum =0;
+            var a= parseInt(prompt("enter a value:"));
+            while(a>=0){
+                sum+=a;
+                a=parseInt(prompt("enter a value:"));
+                console.log(sum);
+            }
+            console.log(sum);
+            
+        var a= parseInt(prompt("enter a value:"));
+        while (a < 0 || a > 0) {
+        var b = a;
+        b > 0 ? document.write("positive") : document.write("negative");
+        break;
+      }
+      let text="";
+      let n = 0;
+      do{
+        text+=n + "<br>";
+        n++;
+        
+
+      }
+      while(n<=10);   
+      document.getElementById("dowhile").innerHTML=text; 
+      for(var n=0;n<=20;n+=2){
+        
+        document.write(n + "<br>");
+      }  
+      let sum = parseInt(prompt("Enter a value "));
+        var total = 0;
+        var i;
+        for(i=0;i<=sum;i++){
+            total+= i;            
+        }
+        document.write(total,"<br>");*/
+     let i;
+     let sum;
+     for(i=1;i<=10;i++){
+         sum=i*2;
+       
+         document.write(`${2}*${i}=${sum}`);
+         document.write("<br>");
+       }
+       /*const n = parseInt(prompt("enter the value"));
+       for(let i=1;i<=10;i++){
+       const sum=i*n;
+       document.write(`${n}*${i}=${sum}`);
+       document.write("<br>");
+     }*/
+     
+        // let n=(prompt("enter a value:"));
+        // if(isNaN(n)){
+        //     document.write("It is not a number",n);
+        // }
+        // else{
+        //     document.write("It is a number");
+        // }
+        const getLength = (number) => {
+         return number.toString().length;
+        }
+      console.log(getLength(1234554154865))
+
+    
+
+
+     
+    
+      
+    </script>
+</body>
+</html>

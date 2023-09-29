@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Traps demo</title>
+    <style>
+    header{
+        font-family: 'Times New Roman', Times, serif;
+        background-color:#c4c6ca;
+        color:white;
+        padding: 10px 100px;
+        text-align: right;
+        width:auto;
+        position:relative;
+
+    }
+    .navbar ul{
+            font-weight: bold;
+            gap: 40px;
+            padding: 0%;
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+           
+
+        }
+    .navbar ul li{
+            display: inline;
+            margin-right:20px;
+        }
+    .navbar ul li a{
+            text-decoration: none;
+            margin:0 10px;
+            color:black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+    .navbar ul li a:hover{
+            color:rgb(61, 100, 190);
+            
+            
+            
+            
+            
+        }
+        .bg-image{
+            width: 100% ;
+            height: 120vh;
+            background-image:url("https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1784&q=80") ;
+            background-position: center;
+            background-attachment: fixed; 
+                   
+        }
+        .container{
+            padding: 100px;
+        }
+        @media (max-width:500px){
+            .container{
+                padding: 10px;
+            }
+        }
+        .card-container{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(50px,2fr));
+            gap: 15px;
+            
+        }
+        section{   
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .card{
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            max-width: 300px;
+            background-color:rgb(143, 140, 140);
+            overflow: hidden;
+            text-align: center;
+            font-size: 15px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .price{
+            color: rgb(10, 9, 9);
+            font-size: 15px;
+            padding: 10px;
+        }
+        .card button{
+            border: none;
+            outline: 0;
+            padding: 12px;
+            background-color:#000;
+            color:white;
+            width: 80%;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+        img{
+            height:auto;
+            width: auto;
+            border-radius: 3px;
+        }
+        .card button:hover{
+            color:#000;
+            background-color: white;
+            border-radius: 10px;
+        }
+       
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">New launch</a></li>
+      </ul>
+      </div>
+      
+      </header>
+      <div class="bg-image" id="bg-image"></div>
+      <p class="quote">"AnimeThreads: Unleash Your Inner Otaku with Our Unique T-shirt Collection!"</p>
+      <div class="card-container">
+        <section class="card">
+            <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\download (1).jfif" alt="Naruto Anime T-shirt">
+            <h3>Naruto Anime T-shirt</h3>
+            <p class="price">Price:₹499</p>
+            <br>
+            <button>Add to Cart</button>
+        </section>
+        <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\images.jfif" alt="Kakashi Anime T-shirt">
+        <h3>Kakashi Anime T-shirt</h3>
+        <p class="price">Price:₹499</p>
+        <br><br><br>
+        <button>Add to Cart</button>
+    </section>
+    <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\sas.jfif" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    
+    <button>Add to Cart</button>
+      </section>
+    </div>
+    
+</body>
+</html>

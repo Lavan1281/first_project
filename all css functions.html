@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+
+/**@keyframes slideInRight {
+    from{
+        transform: translateX(-300px);
+
+    }
+    to{
+        transform: translateX(100px);
+
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
+
+.h1{
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-delay:1s ;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    transform: translateX(-150px);
+
+ 
+    
+}
+@keyframes rotate {
+    from{
+        transform: rotate(90deg);
+
+    }
+    to{
+        transform: rotate(270deg);
+
+    }
+}**/
+@keyframes moveit{
+    from{left:0;}
+    to {left:50%}
+   
+    
+    }
+    @keyframes shakeit{
+        12.5% {left:-50px;}
+        25% {left:50px;}
+        37.5%{left:-25px;}
+        50% {left:25px;}
+        62.5% {left:-10px;}
+        75% {left:10px;}
+  
+    
+
+}
+@keyframes repeatit{
+    from{left:0;}
+    to{left:50px;}
+
+}
+.h2 h3 h4{
+    margin: auto;
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  color: white;
+  animation-name: moveit;
+  animation-duration: 2s;
+  animation-name:shakeit;
+  animation-duration: 2s;
+  animation:repeatit 2s linear 0s infinite alternate;
+  animation-delay:2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+body{
+background-color: rgb(155, 101, 101);
+}
+@keyframes   shake {
+0%{
+  transform: translateY(0);
+}
+20%{
+    transform: translateY(0px);
+}
+
+40%{
+    transform: translateY(30px);
+}
+50%{
+    transform: translateY(0);
+}
+60%{
+    transform: translateY(50px);
+}
+80%
+{
+    transform: translateY(30px);
+}
+100%{
+transform: translateY(0%);
+}
+
+    
+}
+.bounce{
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay:1s ;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    transform: translateX(-150px);
+    
+}
+</style>
+</head>
+<body>
+    
+<!--<h1 class="h1">The transition-timing-function Property</h1>
+
+     <h1 class="bounce">I'm Bouncing</h1>-->
+     <h2 class="h2">
+    <a href="#" target="_blank">moveit</a></h2>
+    <h3 class="h3">
+    <a href="#" target="_blank">shakeit</a></h3>
+    <h5 class="h4">
+    <a href="#" target="_blank">repeatit</a></h4>
+   
+
+
+
+
+
+</body>
+</html>

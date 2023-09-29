@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM,Date and time,Event Propagation -Assessment</title>
+    <style>
+        p {
+    line-height: 0;
+}
+
+div {
+    display:inline-block;
+    padding: 5px;
+
+    background: #fff;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+div:hover {
+    border: 1px solid rgb(198, 92, 92);
+    background: #fdd;
+}
+    </style>
+</head>
+</head>
+<body>
+    <script>
+        //1. Enter date using prompt and check if the day is weekday or weekend?
+        let date2 = prompt("Enter a date: ");
+        let date1 = new Date(date2);
+        let dayweek = date1.getDay();
+        if (dayweek === 0 || dayweek === 6){
+            document.write("Weekend");
+        
+        }
+        else{
+            document.write("Weekday");
+        }
+    </script>
+    <script>
+        //2.Calculate the age
+        function calage(dob){
+            let p = Date.now()-dob.getTime();
+            let l = new Date(p);
+            return Math.abs(l.getUTCFullYear()-1969);
+
+        }
+        console.log(calage(new Date(2014,11,16)));
+
+
+    </script>
+    <script>
+        //3. the current time and gives an alert message whether the class is over
+        const endTime = new Date();
+        endTime.setHours(15, 30, 0, 0); 
+        const currentTime = new Date();
+        if (currentTime > endTime) {
+            alert("Class is over!")
+        } else {
+            alert("Class is still in session.");
+        }
+        
+    </script>
+    
+    <script>
+       //4.Generating Random birthday wishes
+const birthdayWishes = [
+  "Wishing you a day filled with love, joy, and all your heart's desires. Happy Birthday!",
+  "May this year be the best one yet! Happy Birthday!",
+  "Another year older, wiser, and more fabulous! Happy Birthday!",
+  "On your special day, may all your dreams come true. Happy Birthday!",
+  "Cheers to another year of adventures and happiness. Happy Birthday!",
+  "Sending you smiles, love, and warm wishes on your birthday. Happy Birthday!",
+  "May this year be full of exciting new experiences. Happy Birthday!",
+  "Wishing you health, happiness, and lots of love on your birthday. Happy Birthday!"
+];
+
+function BirthdayWish() {
+  const randomIndex = Math.floor(Math.random() * birthdayWishes.length);
+  return birthdayWishes[randomIndex];
+}
+
+
+const randomBirthdayWish = BirthdayWish();
+document.write(randomBirthdayWish);
+</script>
+<script>
+    //5. BOM
+    //a) Use Window Object to find width & height
+    var a = window.outerWidth;
+    var b = window.outerHeight;
+    document.write("outerheight " + b);
+    document.write("<br>");
+    document.write("outerwidth " + a);
+    
+    //b) Use Screen Object to find pixel depth
+    var p = screen.pixelDepth;
+    document.write("pixel " + p);
+    document.write("<br>");
+
+    //c) use Location Object to get current page URL
+     var l = window.location.href;
+     document.write("location " +l);
+    
+    //d) Use History Object to get the pages visited
+
+    var x = history.length;
+    document.write(x);
+    function p(){
+            window.location.assign("https://join.skype.com/uvGrun17aoji");
+
+        }
+        function forwards() {
+            window.history.back();
+
+        }
+        function backwards(){
+            window.history.forward();
+        }
+
+
+
+</script>
+<button onclick="p()">skype</button>
+<button onclick="forwards()">forward</button>
+<button onclick="backwards()">backwards</button>
+
+<script>
+
+    //e) Check for internet connection online/offline
+
+    function Internet() {
+  if (navigator.onLine) {
+    console.log("You are online.");
+  } else {
+    console.log("You are offline.");
+  }
+}
+
+Internet();
+
+window.addEventListener("online", Internet);
+window.addEventListener("offline", Internet);
+
+</script>
+<script>
+
+    //6. Write code to get the following output. Use Event propagation (capture & bubble)
+
+
+</script>
+<br>
+<br>
+<div>1
+    <div>2
+        <div>3
+            <div>4
+                <div>5</div>
+            </div>
+        </div>
+    </div>5
+</div>
+<section id="log"></section>
+<script>
+    var logElement = document.getElementById('log');
+
+function log(msg) {
+    logElement.innerHTML += ('<p>' + msg + '</p>');
+}
+
+function capture() {
+    log('capture: ' + this.firstChild.nodeValue.trim());
+}
+
+function bubble() {
+    log('bubble: ' + this.firstChild.nodeValue.trim());
+}
+
+var divs = document.getElementsByTagName('div');
+for (var i = 0; i < divs.length; i++) {
+    divs[i].addEventListener('click', capture, true);
+    divs[i].addEventListener('click', bubble, false);
+}
+</script>
+
+  
+
+</body>
+</html>

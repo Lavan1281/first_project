@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 3</title>
+</head>
+<body>
+    <form>
+    <label> Name</label>
+    <input type="text" placeholder="name" required><br>
+    <input type="submit"><br>
+    <label>Number</label>
+    <input type="number" placeholder="enter your number" readonly><br>
+    <label>tel</label>
+    <input type="tel" placeholder="123-456-789" disabled><br>
+    
+    <label> time</label>
+    <input type="time" placeholder="time"><br>
+    <label>date</label>
+    <input type="date" ><br>
+    <label>file</label>
+    <input type="file">
+    <label>Range</label>
+    <input type="range"><br>
+    <label>
+        quantity 1 to 5
+    </label>
+    <input type="number" placeholder="number"  min="1" max="5"><br>
+    <label>Hidden</label><br>
+    <iframe src="C:\Users\ADMIN\OneDrive\Documents\class2.html" width="600px" height="400px"></iframe>
+    <audio controls> 
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio><br>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">  
+        <source src="movie.ogg" type="video/ogg">
+        
+    </video><br>
+
+    <input type="submit"><br>
+    
+    </form>
+    <form>
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a+b"></output>
+        <br><br>
+        <input type="submit">
+    </form> 
+    
+</body>
+</html>
+<script>
+    window.onload=function()
+    {
+        var canvas=document.getElementById("canvas");
+
+        var context=canvas.getContext("2d");
+        context.moveTo(150,50);
+        context.lineTo(250,50);
+        context.strokeStyle="skyblue";
+        context.fillStyle="red";
+        context.fill();
+        context.stroke();
+    }
+
+    window.onload=function()
+    {
+        var canvas=document.getElementById("canvas");
+
+        var context=canvas.getContext("2d");
+        
+        context.rect(50,50,200,200);
+        context.strokeStyle="skyblue";
+        context.fillStyle="skyblue";
+        context.fill();
+        context.stroke();
+    }
+    window.onload=function()
+    {
+        var canvas=document.getElementById("canvas");
+        var context=canvas.getContext("2d");
+        context.arc(150,150,80,1.2*Math.PI,1.8*Math.PI,false);
+        context.stroke();
+    }
+</script>

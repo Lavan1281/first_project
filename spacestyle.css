@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(12, 13, 14);
+    width: auto;
+}
+.navbar{
+    flex: 1;
+    text-align: right;   
+}
+.navbar ul{
+    display:inline-block;
+    list-style: none;
+}
+.navbar ul li{
+    display:inline-block;
+    margin-right: 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    color:rgb(192, 196, 196);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar ul li a:hover{
+    color:rgb(161, 97, 110);
+}
+
+.img1{
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+    text-align: center;
+
+}
+.text h1{
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+.text .btns{
+    margin-top: 20px;
+}
+.text .btns button{
+    height: 50px;
+    color: black;
+    background-color: darkgrey;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.text .btns button:hover{
+    color: white;
+    background-color: rgb(30, 34, 34);
+}
+section{
+    background-color: rgb(192, 185, 185);
+}
+
+div .mars{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+div .mars, .img2{
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: rgb(27, 26, 26);
+}
+div .mars h1{
+    font-size: 45px;
+    line-height: 55px;
+    margin: auto;
+    display: flex;
+}
+div .mars p{
+    width: 40%;
+    font-size: 20px;
+}
+div .img2 img{
+    width: 530px;
+    animation: mars 120s linear;
+}
+@keyframes mars{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+}
+.img3{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+

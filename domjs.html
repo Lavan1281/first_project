@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head id="head1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Select Topmost Elements</title>
+</head>
+<body>
+    <!--DOM - Document Object Model  parent and root - heriachy--> 
+    <!-- <script>
+        console.log(document.documentElement.getAttribute("lang"));
+        console.log(document.body.style.background = "pink");
+        console.log(document.head.firstElementChild.nodeName);  
+    </script> -->
+    <!-- <p id="mark">This is a paragraph of text.</p>
+    <p id="p1 mark" class="p2">Select the element of ID.</p>
+    <p class="p2 para">uyuyauiyfuiyusd</p>
+    <div class="demo p2">
+        ghjghjghj
+    </div> -->
+    <!-- <script>
+        document.write("Selecting element with id mark");
+        var match = document.getElementById("mark");
+        match.style.background = "lightblue";
+        match.style.color="red";
+        console.log(document.body.firstElementChild.nodeName); 
+        document.write("<br>");
+
+        var need=document.getElementsByClassName("p2");
+      document.write(need.length);//3
+      need[0].style.fontStyle= "italic";
+      need[need.length-1].style.fontWeight= 'bold';
+
+      for( var elem in need){
+        need[elem].style.background = "orange";
+
+      }
+        
+    </script> -->
+
+    <!-- <script>
+
+        // To access children 
+        console.log(document.head.lastElementChild.nodeName);
+        console.log(document.documentElement.getAttribute("name"));
+        let m = document.querySelector("#head1");
+        console.log(m.children);
+        console.log(m.childElementCount);
+        console.log(m.firstElementChild.getAttribute("charset"));
+        console.log(m.lastElementChild.nodeName);
+        console.log(m.children[1].getAttribute("content"));
+        console.log(m.children[1].getAttribute("name"));
+
+
+    </script> -->
+
+    <!--------------------Tree Travels--------------->
+    <!-- <header>
+        <main class="main">
+            <h2> Loading Movies</h2>
+            <ul>
+              <li>Star wars</li>
+              <li>Titanic</li>
+              <li>Life of pi</li>
+              <li>Fast and furious</li>
+              <li>Love hard</li>
+              <li>Marry me</li>
+              <li>Mysterious house</li>
+            </ul>
+          </main>
+          <footer role="contentinfo" id="foot">
+              <p class="other">&copy; 2016</p>
+  
+          </footer>
+          
+    </header>
+    <script>
+        var l = document.querySelector(".main");
+        console.log(l.children);
+        // console.log(l.childNodes);
+        console.log(l.children[2]);
+        // console.log(l.children[1].firstElementChild.textContent);
+        // console.log(l.parentNode);
+        // console.log(l.children[1].lastElementChild.textContent);
+        console.log(l.children[0].nextElementSibling.textContent);
+        // console.log(l.children[1].children[6].textContent);
+        // console.log(l.children[1].previousElementSibling);
+
+
+
+    </script> -->
+    <main role="main" class="main">
+        <h1> Series</h1>
+        <ol>
+          <li>Peaky Blinders</li>
+          <li>Squid game</li>
+          <li>Monet Heist</li>
+          </ol>
+          <p>Upcoming series</p>
+         <h3>To be continued</h3>
+      </main>
+<script>
+    let main =document.querySelector('.main');
+    console.log(main.children);
+    console.log(main.children[2]);
+    console.log(main.firstElementChild);
+    console.log(main.nextElementSibling);
+    console.log(main.parentNode);
+
+</script>
+
+    
+    
+</body>
+</html>

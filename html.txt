@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>My first html page</title>
+    </head>
+    <body style="color:blueviolet">
+        <h1><u>paragraph tag</u></h1>
+        <h2>heading</h2>
+        <h3>heading</h3>
+        <h4>heading</h4>
+        <h5>heading</h5>
+        <h6><u>heading</u></h6>
+        <hr>
+        <b><i><p>&nbsp;My <br>paragraph<br>tag</p></i></b>
+        <pre>
+            x= input("enter a number");
+            print(x)  
+        </pre>
+        <p id="para1" class="paraclass1"></p>
+        <address> Egmore,chennnai.</address>
+        <blockquote>
+            <mark><u>"where there is life, there is hope"</u></mark>
+       
+        <cite>Stephen Hawking</cite>
+    </blockquote>
+    <p><abbr title="World Wide Web">www</abbr></p>
+    <ol type="a">
+        <li>html</li>
+        <li>css</li>
+        <li>bootstrap</li>
+        
+    </ol>
+    <ul type="circle">
+        <li>html</li>
+        <li>css</li>
+        <li>bootstrap</li></ul>
+        <ul type="disc">
+            <li>html</li>
+            <li>css</li>
+            <li>bootstrap</li></ul>  
+            <ul type="square">
+                <li>html</li>
+                <li>css</li>
+                <li>bootstrap</li></ul>
+                <ol type="a" st<tr/art=4>
+                    <li>javascript</li>
+                    <li>python</li>
+                    <li>php</li>
+                </ol>
+                <p>i love <q>space</q></p>
+                <a href ="#">facebook</a>
+                <img src="data:image/jpeg;base64,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">
+                <br><img src="#" alt="universe" width="100" height="50">
+            <table border="1">
+                <tr >
+                    <th rowspan="1">S.No</th>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>gender</th>
+                    <th>qualification</th>
+
+                </tr>
+                <tr>
+                    <td cospan="2">1</td>
+                    <td>lavanya</td>
+                    <td>23</td>
+                    <td>female</td>
+                    <td>bsc.physics</td>
+                </tr>
+
+            </table>       
+            <p style="color:purple;text-align:center;font-family:Times New Roman;background-color:pink;font: size 50;">purple</p>
+            
+            
+            
+            </body>
+           
+
+</html>

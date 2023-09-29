@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time Js</title>
+</head>
+<body>
+    <script>
+        var pl = new Date();
+        document.write(pl);
+        document.write("<br>");
+        document.write(pl.toTimeString());
+        document.write("<br>");
+        document.write(pl.toLocaleDateString());
+        document.write("<br>");
+        document.write(pl.toDateString());
+        document.write("<br>");
+        document.write(pl.toISOString());
+        document.write("<br>");
+        document.write(pl.toUTCString());
+        document.write("<br>");
+
+        function sub(){
+            alert("Hello World!");
+
+        }
+        function sub1(){
+            let p = new Date();
+            document.getElementById("sub2").innerHTML = p.toLocaleTimeString();
+        }
+        setInterval(sub1,10);
+       
+        
+
+    </script>
+    <button onclick="setTimeout(sub(),50000)">Click</button>
+    <p>Current Time: <span id="sub2"></span></p>
+    
+    
+</body>
+</html>

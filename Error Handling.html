@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+<body>
+    <!-- <script>
+        //Reference error when variable called without giving value
+        try{
+        var name = "Error";
+        document.write(l);
+        }
+        catch(error){
+            alert(error.name +error.message);   
+
+        }
+    </script> -->
+    <!-- <script>
+        var p = Number(prompt("Enter a number: "));
+        try{
+            if(p==""||p==null||!Number.isInteger(+p)){
+                throw new Error("invalid Input");
+            }
+            else{
+                document.write("correct input")
+            }
+        }
+        catch(l){
+            alert(l.message);
+        }
+    </script> -->
+
+    <!-- <script>
+        function pl(a){
+            if(a<0){
+            throw new Error("Cannot Calculate square root");
+            }
+            else{
+                return Math.sqrt(a);
+            }
+            
+        }
+
+            try{
+                document.write(pl(-16));
+            }
+            catch(e){
+                alert(e.message);
+            }
+    </script> -->
+    <!-- <script>
+        try{
+            eval("alert('Hello World!)");
+        }
+        catch(e){
+        
+            document.write(e.name + " "+e.message);
+        }
+    </script> -->
+    <script>
+        var n = 123;
+        try{
+            var m = n.toLowerCase();
+            document.write(m);
+
+        }
+        catch(e){
+            alert(e.name +e.message);
+        }
+    </script>
+</body>
+</html>

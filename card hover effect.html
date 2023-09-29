@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Card hover effect</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 100vh;
+            padding: 32px;
+            display: grid;
+            place-items: center;
+            background-color: coral;
+
+        }
+        .gallery{
+            display:flex;
+            background-color: coral;
+            gap: 30px;
+        }
+        .card{
+            position: relative;
+            left: 0px;
+            width: 190px;
+            height: 220px;
+            background-color: rgb(174, 152, 164);
+            border-radius: 8px;
+            transition: 1000ms all;
+            transform-origin: center left;
+            box-shadow: 0 5px 12px rgba(173, 23, 113, 0.5);
+            outline: 1px solid pink;  
+            overflow: hidden;        
+        }
+        .card img{
+            height: 190px;
+            object-fit: cover;
+            border-radius: 4px;
+
+        }
+        .card:hover{
+            cursor: pointer;
+            transform: scale(1.15);
+
+        }
+        .card:hover figcaption{
+            font-size: 0.6rem;
+            position: absolute;
+            height: 80px;
+            width: 160px;
+            display: flex;
+            align-items: end;
+            background-color: linear-gradient(to top rgba(0,0,0,0.9)0%,rgba(0,0,0,0)100%);
+            color: rgb(21, 20, 20);
+            left: 0px;
+            bottom: 0px;
+            padding-left: 12px;
+            padding-bottom: 2px;
+        }
+        .card:hover{
+            font-weight: bold;
+            cursor: pointer;
+            /*transform: translateX(22px);*/
+            transform: scale(1.1);
+            z-index: 1;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <article class="card">
+            <figure>
+                <img src="c:\Users\ADMIN\Downloads\images.jfif" alt="Kakashi Anime T-shirt">
+                <figcaption>
+                    <h3>Kakashi Anime T-shirt</h3>
+                </figcaption>
+            </figure>
+        </article>
+        <article class="card">
+            <figure>
+                <img src="c:\Users\ADMIN\Downloads\images.jfif" alt="Kakashi Anime T-shirt">
+                <figcaption>
+                    <h3>Kakashi Anime T-shirt</h3>
+                </figcaption>
+            </figure>
+        </article>
+        <article class="card">
+            <figure>
+                <img src="c:\Users\ADMIN\Downloads\images.jfif" alt="Kakashi Anime T-shirt">
+                <figcaption>
+                    <h3>Kakashi Anime T-shirt</h3>
+                </figcaption>
+            </figure>
+        </article>
+    </div>
+        
+    <!--<div class="card-container">
+        <section class="card">
+            <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\images (6).jfif" alt="Naruto Anime T-shirt">
+            <h3>Naruto Anime T-shirt</h3>
+            <p class="price">Price:₹499</p>
+            <br>
+            <button>Add to Cart</button>
+        </section>
+        <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\images.jfif" alt="Kakashi Anime T-shirt">
+        <h3>Kakashi Anime T-shirt</h3>
+        <p class="price">Price:₹499</p>
+        <br><br><br>
+        <button>Add to Cart</button>
+    </section>
+    <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\sas.jfif" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    
+    <button>Add to Cart</button>
+      </section>
+      <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\images (9).jfif" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    
+    <button>Add to Cart</button>
+      </section>
+      <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\Wings_of_Freedom_From_Attack_on_titan_Anime_Tshirt_In_India_By_Silly_Punter_c72d13c6-26f3-4caf-b53d-c804a1fd6d08.jpg" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    
+    <button>Add to Cart</button>
+      </section>
+      <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\images (7).jfif" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    
+    <button>Add to Cart</button>
+      </section>
+      <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\16854633_hi.jfif" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    <button>Add to Cart</button>
+      </section>
+      <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\naruto-t-shirt-team-seven-e1646523993784.jpg" alt="Sasuske Anime T-shirt">
+    <h3>Sasuske Anime T-shirt</h3>
+    <p class="price">Price:₹499</p>
+    <button>Add to Cart</button>
+    </section>
+    </div>-->
+</body>
+</html>

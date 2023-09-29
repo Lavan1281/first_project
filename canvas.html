@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canva</title>
+    <style>
+        canvas{
+            border:3px solid #100
+        }
+    </style>
+    <script>
+        window.onload=function()
+        {
+            var canvas=document.getElementById("canvas");
+
+            var context=canvas.getContext("2d");
+            context.moveTo(150,50);
+            context.lineTo(250,50);
+            context.strokeStyle="skyblue";
+            context.fillStyle="red";
+            context.fill();
+            context.stroke();
+        }
+
+        window.onload=function()
+        {
+            var canvas=document.getElementById("canvas");
+
+            var context=canvas.getContext("2d");
+            
+            context.rect(50,50,200,200);
+            context.strokeStyle="skyblue";
+            context.fillStyle="skyblue";
+            context.fill();
+            context.stroke();
+        }
+        w
+    </script>
+    
+
+
+</head>
+<body>
+    
+    <canvas id="canvas" width="700px" height=" 400px"></canvas>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //abstraction - hiding the data's
+        function jockey(fname,lname){
+            let firstname  = fname;
+            let lastname = lname;
+
+           let details = function(){
+            return(`${firstname}`);
+
+            }
+            let data = function(){
+                return(`${lastname}`);
+            }
+            console.log(firstname);
+            console.log(lastname);
+
+        }
+        let l = new jockey(
+            "Lavanya","Aravinthan"
+        );
+        console.log(l.details);
+
+    </script>
+</body>
+</html>

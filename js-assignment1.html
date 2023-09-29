@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+      //1. Enter the age of a person and check the category:
+      var n = parseInt(prompt("Enter the Age of a person: "));
+      if(n>=0 && n<=12){
+        document.write("Kids");
+      }
+      else if(n>=13 && n<=19){
+        document.write("Teenage");
+      }
+      else if(n>=20 && n<=30){
+        document.write("Youngster");
+      }
+      else if(n>=35 && n<=50)
+      {
+        document.write("Middle-Age");
+      }
+      else
+      {
+        document.write("Senior citizen");
+      }
+
+      //2.pattern of alphabet
+      let n =5;
+      let string ="";
+      
+      for(let i=1;i<=n;i++){
+        for(let j=0;j<n-i+1;j++){
+            string += String.fromCharCode(j+65);
+            
+        }
+        string += "\n";
+      }
+      console.log(string);
+
+    //3.switch case to get the day of the week in number
+
+     let day= parseInt(prompt("Enter a number:"));
+
+    switch(day){
+        case 1:
+            document.write("Monday");
+            break;
+        case 2:
+            document.write("Tuesday"); 
+            break;
+        case 3:
+            document.write("Wednesday");
+            break;
+        case 4:
+            document.write("Thursday");
+            break;
+        case 5:
+            document.write("Friday");
+            break;
+        case 6:
+            document.write("Saturday");
+            break;
+        case 7:
+            document.write("Sunday");
+            break;
+        default:
+                break;
+
+     }
+    
+
+    //4. Fibonnacci series
+
+    var number = parseInt(prompt("enter the number of terms: "));
+    let n1 = 0, n2 =1,nextTerm;
+    for(let i=1;i<=number;i++){
+        console.log(n1);
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+    }
+
+    //5. number pattern
+    let n=4;
+    let string = "";
+    let number = 1;
+    for(let i=1;i<=n;i++){
+        for(let j=1;j<=i;j++){
+            string += number;
+            number++;
+        }
+        string+="\n";
+
+    }
+    console.log(string);
+//6.sum of numbers using while loop
+
+    const m = parseInt(prompt("Enter a number: "));
+    let sum=0; i=1;
+    while(i<=m){
+        sum +=i;
+        i++;
+    }
+    console.log("the sum of entered number:" + sum);
+
+    //     console.log(parseInt("123Hello"));
+// console.log(parseInt("Hello123"));
+// console.log(NaN == NaN);
+// const isTrue=true==[];
+// const isFalse= true==[];
+// console.log(isTrue+isFalse);
+
+var rem;
+if(10>4)
+{
+  rem=true;
+
+}
+else
+{
+  rem=55;
+}
+console.log(rem);
+console.log(3>2>1);
+console.log(('b'+'a'+ +'a'+'a').toLowerCase());
+var elem;
+if(11 == 11 && 12<10)
+{
+  elem=12;
+
+}
+else
+{
+  elem='undefined'
+}
+console.log(elem)
+
+var a =true +true +true *3;
+console.log(a);
+var a='hello';
+var sum=0;
+for(var i=0;i<a.length;i++)
+{
+  sum+=(a[i] - 'a');
+}
+console.log(sum);
+var string1 = "Hi";
+
+var intvalue = 30;
+
+alert( string1 + intvalue );
+console.log(typeof(NaN));
+
+
+
+
+
+
+</script> 
+
+
+<p id="example"></p>
+<script>
+  
+  console.log(('b'+'a'+ +'a'+'a').toLowerCase());
+  var a='hello';
+var sum=0;
+for(var i=0;i<a.length;i++)
+{
+  sum+=(a[i] - 'a');
+}
+console.log(sum);
+
+
+document.getElementById("demo").innerHTML="Hello world";
+
+</script>
+<p id="demo">This is a demonstration.</p>
+
+
+
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>

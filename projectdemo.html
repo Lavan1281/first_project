@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Anime T-shirt Store</title>
+    <style>
+        body,h1,h3,p,ul,li{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        header{
+            font-family: 'Times New Roman', Times, serif;
+            background-color:#1e5daf;
+            color:white;
+            padding: 10px 100px;
+            text-align: right;
+            width:auto;
+
+        }
+        .navbar ul{
+            font-weight: bold;
+            gap: 40px;
+            padding: 0%;
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            box-shadow:  0 4px 30px -10px rgb(108, 114, 117);
+
+        }
+        .navbar ul li{
+            display: inline;
+            margin-right:20px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+
+        }
+        .navbar ul li a:hover{
+            color:rgb(72, 50, 58);
+            
+            
+        }
+        section{   
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            max-width: 300px;
+            margin:auto;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .price{
+            color: grey;
+            font-size: 15px;
+        }
+        
+        
+        .card button{
+            border: none;
+            outline: 0;
+            padding: 12px;
+            background-color:#000;
+            color:white;
+            width: 100%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .card button:hover{
+            opacity:0.7;
+        }
+        footer{
+            text-align:center;
+            padding:10px;
+            background-color: rgb(216, 198, 174);
+            margin-bottom: auto;
+           
+        }
+        .column{
+            float:left;
+            width:auto;
+            padding: 0 10px;
+            display: flex;
+        }
+        .row{
+            margin: 0 -5px;
+        }
+        .row::after{
+            content:"";
+            display:flex;
+            clear: both;
+
+        }
+        @media screen and (max-width:600px){
+        .column{
+            width: 600px;
+            display:flex;
+            margin-bottom: 20px;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+   
+    <header>
+        
+
+    <div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">New launch</a></li>
+    </ul>
+    </div>
+
+    </header>
+    <div class="row">
+        <div class="column">
+    <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\download (1).jfif" alt="Naruto Anime T-shirt">
+        <h3>Naruto Anime T-shirt</h3>
+        <p class="price">Price:₹499</p>
+        <button>Add to Cart</button>
+    </section>
+         </div>
+    
+<div class="column">
+    <section class="card">
+        <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\kak.jfif" alt="Kakashi Anime T-shirt">
+        <h3>Kakashi Anime T-shirt</h3>
+        <p class="price">Price:₹499</p>
+        <button>Add to Cart</button>
+    </section>
+    </div>
+    <div class="column">
+        <section class="card">
+            <img src="c:\Users\ADMIN\OneDrive\Desktop\whytap\photo\sas.jfif" alt="Sasuske Anime T-shirt">
+        <h3>Sasuske Anime T-shirt</h3>
+        <p class="price">Price:₹499</p>
+        <button>Add to Cart</button>
+          </section>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p> &copy; 2023 AnimeT-shirts. All rights reserved</p>
+    </footer>
+</body>
+</html>

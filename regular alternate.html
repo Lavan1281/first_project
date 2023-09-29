@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let alt = /Johnny|Ceasar|Remo/;
+        // let altern = "Our dog names are Johnny,Ceasar and Remo";
+        // let altname = altern.match(alt);
+        // document.write(altname);
+        
+        //grouping 
+    //     var l =  "The wheels on the bus goes Round and round";
+    //     var m = /(Round)+/gi;
+    //     var n = l.match(m);
+    //     document.write(n);
+    //     console.log(n);
+
+    //     var str = "One day Gogo will go to school.";
+    // var regex1 = /(go)+/i;
+    // var regex2 = /(go)+/gi;
+    
+    // var matches = str.match(regex1); // case-insensitive match
+    // console.log(matches);
+
+    //word boundaries
+
+    let cars = "words beginning with car: car,cartoon,carrot,cart,. words ending with car: oscar,supercar";
+    let cars1 = /(\bcar\w*)/g;
+    let cars2 = "<b>$1</b>";
+    let cars3 = cars.replace(cars1,cars2);
+    document.write(cars3);
+
+    
+    </script>
+</body>
+</html>

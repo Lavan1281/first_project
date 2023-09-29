@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <!-- <button  id= "p" onclick="add()">Insert Element</button>
+    <h1 id="title">Hello World!</h1>
+    <p id="hint">This is a simple paragraph.</p>
+</div>
+    <script>
+        function add(){
+            var x= document.createElement("div");
+            var y = document.createTextNode("Hi, How have you Been?");
+            x.append(y);
+            var z = document.getElementById("p");
+            document.body.insertBefore(x,z);
+        }
+    </script> -->
+
+    <!----------Removechild-------------------------------------------->
+
+<!-- <p id="hint">This is the sample paragraph</p>
+<button onclick="removeElem()">Remove button</button>
+<script>
+    function removeElem(){
+        var checkE1 = document.getElementById("hint");
+        checkE1.parentNode.removeChild(checkE1);
+    }
+</script> -->
+
+
+<!------------Replace element----------->
+
+<!-- <div id ="Main">
+    <h1 id="para">Hello World!</h1>
+    <p id="oldpara">This is old paragraph</p>
+    <button onclick="replace()">Replace</button>
+
+</div>
+
+<script>
+    function replace(){
+        var elem = document.getElementById("Main");
+        var child = document.getElementById("oldpara");
+
+        var child1= document.createElement("p");
+        var child2= document.createTextNode("this is new paragraph");
+        child1.append(child2);                     
+        elem.replaceChild(child1,child);           //(now,old)//
+    }
+</script> -->
+
+
+<!--------------------------------------------------------My To Do List---------------------------------------------------------------------->
+
+<!-- <h1>My To Do List</h1>
+<div id="list">
+    <label>Enter your tasks to do:</label>
+    <input type="text" id="getinput">
+    <button onclick="add()">Add Task</button>
+    <ul id="list1">
+
+    </ul>
+</div>
+<script>
+    function add(){
+        var x = document.createElement("li");
+        var y = document.getElementById("getinput");
+        
+        var z = document.getElementById("list1");
+        var l = document.createElement("button");
+        l.innerHTML="delete";
+        x.innerHTML=y.value;
+        z.appendChild(x);
+        z.appendChild(l);
+        z.addEventListener('click',()=> {
+            z.removechild(y);
+            z.removeChild(l);
+
+        });
+
+    }
+    </script> -->
+    <!-- <div id="main">
+        <h1>JavaScript - DOM</h1>
+        <p>This is a paragraph</p>
+        <button onclick="insertContent()">Insert Content</button>
+    </div>
+
+
+    <script>
+        function insertContent(){
+            var l = document.getElementById("main");
+            l.insertAdjacentHTML("beforebegin","<p>This is a before begin</p>");
+            l.insertAdjacentHTML("afterbegin","<p>This is a after begin</p>");
+            l.insertAdjacentHTML("beforeend","<p>This is a before end</p>");
+            l.insertAdjacentHTML("afterend","<p>This is a after end</p>");
+        }
+
+    </script> -->
+<!-- 
+    <button id="Btn1">Click</button>
+    <script>
+        var x = document.getElementById("Btn1");
+        x.setAttribute("class","element");
+        document.write(x.getAttribute("class"));
+        var s= document.querySelector("div");
+        document.write("<br>");
+        s.setAttribute("width","200");
+        document.write(s.getAttribute("width"));
+
+    </script> -->
+
+    <div id="main">
+        <h1>JavaScript-DOM</h1>
+        <p>This is a paragraph</p>
+
+    </div>
+    <button id="SetContent" onclick="firstElement()">SetContent</button>
+    <button id="GetContent" onclick="secondElement()">GetContent</button>
+    <script>
+        function firstElement(){
+            var x = document.getElementById("main").innerHTML;
+            alert(x);
+            
+        }
+        function secondElement(){
+            var y = document.getElementById("main");
+            y.innerHTML="<p>This is new paragraph</p>";
+         
+        }
+        var e=document.querySelector("p");   console.log(e);
+        
+    </script>
+
+
+
+
+</body>
+</html>

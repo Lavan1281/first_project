@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+////window object/////
+
+
+
+        // var a = window.outerWidth;
+        // var b = window.outerHeight;
+        // document.write("outerheight " + b);
+        // document.write("<br>");
+        // document.write("outerwidth " + a);
+        // var x = window.innerHeight;
+        // var y = window.innerWidth;
+        // document.write("<br>");
+        // document.write("<br>");
+        // document.write("innerheight " + x);
+        // document.write("<br>");
+        // document.write("innerwidth " + y);
+
+    //////Screen Object//////
+
+        // var n = screen.width;
+        // var m = screen.height;
+
+        // document.write("screen width:" + n);
+        // document.write("<br>");
+        // document.write("screen height: " + m);
+        // document.write("<br>");
+
+        // //available width and height
+        
+        // var l = screen.availHeight;
+        // var p = screen.availWidth;
+
+        // document.write("screen available height:" + l);
+        // document.write("<br>");
+        // document.write("screen available width: " + p);
+
+        //color depth//
+
+        // var l =screen.colorDepth;
+        // document.write("screen color depth: " + l );
+
+        // //pixel depth
+        // var p = screen.pixelDepth;
+        // document.write("pixel " + p);
+        // document.write("<br>");
+
+        // ////location object/////
+
+        // var lp = window.location.href;
+        // document.write("location " + lp);
+
+
+        ///Assign Method -it will move to next page same as replace 
+
+        function p(){
+            window.location.assign("https://www.instagram.com/");
+
+        }
+
+        
+        ////Replace Method   - it will move to next page
+        
+        // function pl(){
+        //     window.location.replace("https://join.skype.com/uvGrun17aoji");
+        // }
+        //       function pl(){
+        //     window.location.reload();
+        // }
+
+        //history object
+
+        var x = history.length;
+        document.write(x);
+    
+        function forwards() {
+            window.history.back();
+
+        }
+        function backwards(){
+            window.history.forward();
+        }
+    </script>
+
+    <!-- <button onclick="pl()">Insta</button> -->
+    <button onclick="p()">Ins</button>
+    <button onclick="forwards()">forward</button>
+    <button onclick="backwards()">backwards</button>
+
+</body>
+</html>

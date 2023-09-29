@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//parse- to change from js to json
+        
+        // var a = `{
+        //     "class1":{
+        //         "student": "Lavanya",
+        //         "age": 22
+        //     },
+        //     "class2": {
+        //         "student": "Kowslaya",
+        //         "age": 23
+        //     },
+        //     "class3": {
+        //         "student": "Susil",
+        //         "age": 22
+        //     },
+        //     "class4": {
+        //         "student": "Alagar",
+        //         "age": 21
+        //     }
+       
+        // }`;
+        // var b = JSON.parse(a);
+        // document.write(b.class2.student);
+
+        var l = `{"Celebs":["Robert Downey Jr","Chris Evans", "Tom Holland", "Chris Hemsworth", "Chris Pratt"]
+
+        }`;
+        var m = JSON.parse(l);
+        document.write(m.Celebs[2],"<br>");
+        document.write(typeof(l),"<br>");
+        document.write(typeof(m),"<br>");
+        var n = ["Robert Downey Jr","Chris Evans", "Tom Holland", "Chris Hemsworth", "Chris Pratt"];
+        document.write(typeof(n),"<br>");
+        var s = JSON.stringify((n));
+        document.write(typeof(s),"<br>");
+
+        //instance of - to check whether it is object or not
+        
+
+    </script>
+</body>
+</html>

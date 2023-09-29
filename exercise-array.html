@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sum and product of array
+        // var array =[1,2,3,4,5,6,7], s=0,p=1,i;
+        //   for(i=0;i<array.length;i+=1){
+        //     s += array[i];
+        //     p *= array[i];
+
+        //   }
+        //   console.log("sum :" +s);
+        //   console.log("product :" +p);
+
+        var x = 0;
+        var array = Array();
+       function add_element_to_array(){
+           array[x] = document.getElementById("text1").value;
+          alert("element:"+array[x]+"added to index"+x);
+           x++;
+            document.getElementById("text1").value = "";
+        }
+        function display_array()
+        {
+            var e ="<hr\>";
+           for(var y=0; y<array.length;y++){
+               e += "element" + y + " = " + array[y] +"<br/>";
+            }
+            document.getElementById("result").innerHTML=e;
+         } 
+
+
+
+    </script>
+    <input type = "text" id="text1">
+    <input type ="button" value ="add" onclick ="add_element_to_array()";>
+    <input type = "button" value=" display" onclick="display_array()";>
+    <div id ="result"></div> 
+    
+    
+
+    
+    
+  
+
+</body>
+</html>

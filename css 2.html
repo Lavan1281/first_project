@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <!--<style>
+        div.relative{
+            position:relative;
+            left:40px;
+            border:3px solid #443cbc;
+
+        }
+        div.fixed{
+            position:fixed;
+            left:30px;
+            width:300px;
+            border:3pxsolid #444e0a;
+        }
+        div.relative1 {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #73AD21;
+    } 
+        div.absolute1{
+            position: absolute;
+            top:80px;
+            right:0;
+            width:200px;
+            height:100px;
+            border:3px solid #73AD21;
+
+        }
+        img{position:webkit-sticky;
+        position:sticky;
+        top:0;
+        padding:5px;
+
+    }
+    div.sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+         background-color: #cae8ca;
+  b      order: 2px solid #4CAF50;
+    }
+    </style>
+</head>
+<body>
+    <h2>relative position</h2>
+    <div class="relative">
+        this div element has position:relative;
+    </div>
+<br><br>
+<h2>fixed position</h2>
+<div class="fixed">this div element has position:relative;
+
+</div>
+<img src="c:\Users\ADMIN\OneDrive\Pictures\Soyuz_TMA-2_launch.jpg" alt="rocket" width="200px" height="200px">
+<br><br><br>
+<h2>position:absolute</h2>
+<div class="relative1"> this div element has position: relative</div>
+<div class="absolute1"> this div element has position: absolute</div>
+<br><br><br>
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+
+    <div class="sticky">I am sticky!</div>
+<div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+</body>-->
+<!--<style>
+    img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index:-1;
+      opacity:0.75;
+    
+    }
+    
+    </style>
+    </head>
+    <body>
+    
+    <h1>heading Tag</h1>
+    <img src="c:\Users\ADMIN\OneDrive\Pictures\Soyuz_TMA-2_launch.jpg">
+    <p>launch rocket</p>
+    </body>-->
+    <title>CSS Gradients</title>
+	<style>
+	#main {
+		height: 200px;
+
+		background-color: white;
+		/* background-image: linear-gradient( green,white,pink,red);*/
+        background-image: linear-gradient(to right, rgb(190, 64, 114), rgb(214, 35, 157));
+     background-image: linear-gradient(to top right, 
+          green, rgba(183, 223, 182, 0.4));
+       background-image: repeating-linear-gradient(rgb(153, 0, 74) 2%, 
+                                      #fff 15%, #1956a1 20%);
+       background-image: repeating-linear-gradient(60deg, rgb(129, 26, 95), 
+                                                    #854f94 10%);
+
+ 
+	}
+	
+	.gfg {
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		padding-top: 80px;
+	}
+	
+	.g {
+		font-size: 17px;
+		text-align: center;
+	}
+    #main1 {
+        height: 350px;
+        width: 700px;
+        background-color: rgb(137, 108, 125);
+        background-image: radial-gradient(rgb(27, 59, 162), 
+                                  #441b45, #625588);
+         background-image: radial-gradient(rgb(183, 25, 70) 
+                              40%, #a96998, #622a33);
+    }
+  
+   
+	</style>
+        
+</head>
+<body>
+	<div id="main">
+        
+		<div class="gfg">Linear Gradients</div>
+		<div class="g">
+		Linear looks like this
+        syntax= background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+		</div>
+	</div>
+    <br><br><br>
+    <div id="main1">
+        
+		<div class="gfg">Radical Gradients</div>
+		<div class="g">
+		Radial looks like this
+        syntax= background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+		</div>
+	</div>
+</body>
+</html>

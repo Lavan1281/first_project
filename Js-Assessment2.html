@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Assessment2</title>
+</head>
+<body onload="welcome()">
+    <!-----1.student Array List-
+        (a) Longest Name of the student------->
+
+    <script>
+        let StudentName = ["alexander","balaji","keerthi","kowsi","dinesh","karthick","dhavaselvan",
+"vengatesh","Vignesh","mani"];
+let longestname = "";
+for(i=0;i<StudentName.length;i++){
+    if(StudentName[i].length>longestname.length){
+        longestname = StudentName[i];
+    }
+
+}
+console.log("1. (a) The longest name of the student: "+longestname);
+document.write("<br>");
+
+// (b) Shortest Name of the student
+
+let shortestname =StudentName[0];
+for(i=1;i<StudentName.length;i++){
+    if(StudentName[i].length<shortestname.length){
+        shortestname = StudentName[i];
+    }
+}
+console.log(" (b) The shortest name of the student: "+shortestname);
+</script>
+
+<!--(c) to find the index position of any two element-->
+<script>
+    let index = StudentName.indexOf("alexander");
+    let index1 = StudentName.indexOf("mani");
+    console.log(index);
+    console.log(index1);
+</script>
+
+
+<!--(d) string to Upper Case-->
+<script>
+    let stdname = [];
+    for(let i=0;i<StudentName.length;i++){
+        let uppername = StudentName[i].toUpperCase();
+        stdname.push(uppername);
+    }
+    console.log(stdname);
+    
+
+    console.log(stdname.sort());
+
+</script>
+<form onsubmit="funn1()" >
+    <h3>Form inputs</h3>
+    <div id="main">
+        <label>Name</label>
+        <input type="text" id="nam" onfocus="names(this.id)" onkeyup="funn()"><br><br>
+        <label>Qualification</label>
+        <select>
+            <option>BA</option>
+            <option>B.Sc</option>
+            <option>B.Com</option>
+            <option>MA</option>
+            <option>M.Sc</option>
+            <option>M.Com</option>
+        </select> 
+        <label>Department</label>
+        <input type="text" id="nam1" onfocus="names(this.id)" onkeyup="funn()" >
+        <br><br>
+
+        <label>DOB</label>
+        <input type="date">
+        <br><br>
+        <label>Upload Image</label>
+        <input type="file">
+        <br><br>
+        <button id="sub1">Submit</button>
+    </div>
+</form>
+<script>
+    function welcome(){
+        alert("Welcome to the website!");
+    }
+    function names(a){
+        document.getElementById(a).style.background = "lightblue";
+    }
+    function funn(){
+        var b = document.getElementById("nam1");
+        var c = document.getElementById("nam");
+        c.value = c.value.toUpperCase();
+        b.value = b.value.toUpperCase();
+    }
+    function funn1(){
+        alert("Thank you for submitting the form").z;
+    }
+
+</script>
+<img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="52271.jpg" alt="space" width="100px" height="100px">
+<script>
+    //image mouse over//
+    function bigimg(y){
+        y.style.width = "320px"
+        y.style.height = "320px"
+
+    }
+    function smallimg(y){
+        y.style.width = "100px"
+        y.style.height = "100px"
+
+ }
+</script>
+<script>
+
+</script>
+<!------------------3.Array of Object of student data-------------------------------------------------------------->
+<script>
+    //(a) add 10 objects
+    var stud = [ {name: 'Antony', age: 21, result: true},
+ {name: 'Damon', age: 28, result: false}, 
+ {name: 'alexander', age: 22, result: true},
+ {name: 'balaji', age: 28, result: false},
+ {name: 'kowsi', age: 23, result: true},
+ {name: 'karthick', age: 24, result: false},
+ {name: 'Vignesh', age: 25, result: true},
+ {name: 'kowsi', age: 26, result: false},
+ {name: 'dhavaselvan', age: 29, result: true},
+ {name: 'keerthi', age: 20, result: true},
+];
+for(var i=0;i<10;i++){
+    console.log(stud[i]);
+}
+console.log(stud[0]);
+///////(b)length////////
+
+var len = console.log(stud.length);
+
+</script>
+<script>
+    //(c) check the result of students 
+    
+        for(let i=0;i<stud.length;i++){
+            // var stud1 = stud[i].name + stud[i].age;
+            if(stud[i].result == true){
+                document.write("<br>");
+                document.write("result "+ "true");
+                
+            }
+            else{
+                document.write("<br>")
+                document.write("result "+ "false");
+            }
+        }        
+</script>
+<script>
+    //(d) Check the two name of students exists
+stud.forEach(stud => {
+    if(stud.name == "Antony"){
+        console.log("Student Antony exists");
+    }
+    if(stud.name == "Damon"){
+        console.log("Student Damon exists");
+    }
+
+    
+});
+</script>
+<script>
+    var stud4 = stud;
+    stud4.forEach(stud4 => {
+ if (stud4.result== false){
+   stud4['result'] = true;
+ }
+ console.log(stud4);
+
+});
+
+</script>
+
+
+</body>
+</html>

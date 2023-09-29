@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        div,p,a{
+            padding: 15px 30px;
+            display: block;
+            border: 2px solid black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <!---Event propagation capturing-->
+    
+<div id="main">Div
+    <p id="para">Para
+        <a href="Anchor">Anchor</a> 
+    </p>
+
+</div>
+<script>
+    function tagnames(){
+        alert("capturing "+ this.tagName);
+    }
+    var p = document.querySelectorAll("div,p,a");
+    for(let l of p){
+        l.addEventListener("click",tagnames,true);
+    }
+</script>
+</body>
+</html>
+
+
+<!---------------Bubbling--------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event propagation</title>
+</head>
+<body>
+    <h3>Bubbling</h3>
+    <div onclick='alert("bubbling " + this.tagName)'>div
+        <p onclick='alert("bubbling " + this.tagName)'>p
+            <a href="#" onclick='alert("bubbling " + this.tagName)'>A</a>
+        </p>
+
+    </div>
+    
+</body>
+</html>

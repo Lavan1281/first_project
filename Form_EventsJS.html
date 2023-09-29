@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_EventsJS</title>
+</head>
+<body>
+    <!-- FORM EVENTS -->
+    <label>Enter your Name:</label>
+    <input type="text" id="name2" onblur="fun()"> 
+    <script>
+        function fun(){
+            var a = document.getElementById("name2");
+           // a.value = a.value.toUpperCase();
+           a.value = a.value.toLowerCase();
+        }
+    </script>
+    <br>
+    <h1>Cars - select by onchange function</h1>
+    <select id="cars" onchange="cars2()">
+        <option value="Audi">Audi</option>
+        <option value="Mercendes Benz">Mercendes Benz</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Tesla">Tesla</option>
+        <option value="BMW">BMW</option>
+    </select>
+    <p id ="demo"></p>
+    <script>
+        function cars2(){
+            var c = document.getElementById("cars").value;
+            document.getElementById("demo").innerHTML="You have selected " + c;
+
+        }
+    </script>
+    <br>
+    <h1>Form Submit by onsubmit function</h1>
+    <form onsubmit="fillup()">
+    <label>Enter your name:</label>
+    <input id="name3" type="text" required>
+    <input type="submit">
+    <script>
+        function fillup(){
+            var b = document.getElementById("name3").value;
+            alert("Your form has been successfully submitted " + b);
+        }
+    </script>
+
+</form>
+<br>
+<h1>Function-Onfocus</h1>
+<form>
+    <label>Enter your first name:</label>
+    <input id="fname" type="text" onfocus="names(this.id)">
+    <label>Enter your last name:</label>
+    <input id="lname" type="text" onfocus="names(this.id)">
+</form>
+<script>
+    function names(a){
+        document.getElementById(a).style.background ="lightblue";
+    }
+</script>
+
+
+<br>
+<h1>Key Events</h1>
+<h2>KeyDown</h2>
+<label>Enter your name</label>
+<input type="text" onkeydown="funn()"> 
+<p id="demo1"></p>
+
+<script>
+    function funn(){
+        document.getElementById("demo1").innerHTML = "You have pressed a key in the input";
+    }
+</script>
+<br>
+<h2>Keypress</h2>
+<label>Enter your name</label>
+<input type="text" onkeypress="funny2()"> 
+<p id="demo1"></p>
+
+<script>
+    function funny2(){
+        document.getElementById("demo1").innerHTML = "You have pressed a key in the input";
+    }
+</script>
+<br>
+<h2>KeyUp</h2>
+<label>Enter your name</label>
+<input type="text" id="upper" onkeyup="funny()"> 
+<script>
+    function funny(){
+    var z = document.getElementById("upper");
+    z.value=z.value.toUpperCase();
+}
+</script>
+
+
+</body>
+</html>

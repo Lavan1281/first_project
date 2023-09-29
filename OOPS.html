@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // to create a class using object to access the class
+        //class is a blueprint of an objec
+        class employee{
+            constructor(id,name,salary,designation,address){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+                this.designation=designation;
+                this.address=address;
+            }
+            detail() {
+                document.write("<br>");
+                document.write("this is the class"+"<br>");
+                
+                document.write(this.id+"\n"+this.name+"\n"+this.salary+"\n"+this.designation+"\n"+this.address);
+                
+            }
+        }
+        let obj = new employee(
+            101,"Lavanya",50000,"front end developer","Udumalpet"
+        );
+        
+        let obj1 = new employee(
+            102,"Gowtham",150000,"Cloud engineer","Erode"
+        );
+        obj.detail();
+        obj1.detail();
+        
+
+    </script> -->
+    <!-- <script>
+        class student{
+            constructor(id,name,marks){
+                this.id=id;
+                this.name=name;
+                this.marks=marks;
+            }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            detail(){
+                document.write("students marks");
+                document.write(this.id)
+            }
+        }
+        let object= new student(
+            1,"Lavanya",473
+        );
+        object.detail();
+    </script> -->
+    <!-- <script>
+        //unnamed class expressions
+        var company=class{
+            constructor(id,name){
+                this.id=id;
+                this.name=name;
+            }
+            com(){
+                document.write("<br>");
+                document.write(this.id+"\n"+this.name);
+            }
+
+        }
+        document.write(company,"<br>");
+        document.write(company.name);
+
+        let object = new company(
+            113,"Srihari"
+        );
+        object.com();
+    </script> -->
+<!-- <h3>named class expressions</h3>
+    <script>
+        
+        var Emp = class Employee{
+            constructor(id,name){
+                this.id=id;
+                this.name=name;
+
+            }
+            data(){
+                document.write(this.id+"\n"+this.name);
+            }
+
+        }
+        // document.write(Emp.name);
+        // document.write(Employee);
+        let s= new Emp(121,"Srihari");
+        s.data();
+    </script> -->
+<!-- 
+    <h2>Create a class using a class method</h2>
+    <script>
+        class car{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age(){
+            var s = new Date();
+                document.write(s.getFullYear());
+                document.write(this.name+this.year);
+                return s.getFullYear()-this.year;
+                
+            
+        }
+        }
+
+    
+        let l = new car(
+            "Mercedes Benz",2001
+        );
+        document.write("My car is"+l.age()+ "years old");
+        
+
+    </script> -->
+    <script>
+        //defining class in a traditional way
+        function vehicle(name,model,engine){
+            this.name=name;
+            this.model=model;
+            this.engine=engine;
+
+        }
+        vehicle.prototype.getDetails=function(){
+            console.log("the name of the vehicle is "+this.name + this.model + this.engine);
+        }
+
+        let m = new vehicle(
+            "Mercedes Benz",2001,"40cc"
+        );
+        document.write(m.name+"\n"+m.model+"\n"+m.engine);
+        m.getDetails();
+    </script> 
+</body>
+</html>
